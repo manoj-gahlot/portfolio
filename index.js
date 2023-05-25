@@ -17,3 +17,9 @@
 
 //     }, 500);
 // })
+
+function showCertificatePopUp(url) {
+    // var url = $(this).attr("href");
+    window.open(url, 'popUpWindow', 'height=500,width=500,left=100,top=100,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no, status=yes');
+    // window.open("https://drive.google.com/file/d/1SQoowj32Z8vOValP447QcGBK8CcxAup-/view?usp=share_link", "popUpWindow",);
+}
