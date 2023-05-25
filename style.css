@@ -78,6 +78,7 @@ header {
 
 #main {
     /* height: fit-content; */
+    gap: 1rem;
 }
 
 .flex-header-title {
@@ -214,6 +215,12 @@ ul {
     gap: 3rem;
 }
 
+#about {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
 .about-content {
     box-sizing: border-box;
     margin: 2px;
@@ -247,6 +254,14 @@ ul {
 .about-content span:hover {
     opacity: 1;
     color: #0d8ff3c4;
+}
+
+#cv {
+    padding-left: 5px;
+    font-family: "Orbiton";
+    font-weight: 400;
+    font-size: 1.1rem;
+    color: #8f8ff8;
 }
 
 #education {}
@@ -301,7 +316,14 @@ ul {
     flex-direction: column;
     box-sizing: border-box;
     padding: 15px;
-    flex: 3 200px;
+    flex: 3 150px;
+    gap: 0.5rem;
+}
+
+.edu-detail>a {
+    color: #5381f8d9;
+    font-weight: 100;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .edu-detail * {
@@ -313,4 +335,62 @@ ul {
 .edu-detail span {
     color: wheat;
     font-weight: 300;
+}
+
+
+
+#projects {
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.flex-projects-container {
+    flex-direction: column;
+    gap: 1rem;
+
+}
+
+.flex-project {
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 200px;
+}
+
+.flex-project>.project-img {
+    flex: 1 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* object-fit: fill; */
+}
+
+.project-detail {
+    flex: 2 150px;
+    flex-direction: column;
+    gap: 1rem;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+img {
+    width: 100%;
+    height: 50%;
+
+}
+
+.project-detail * {
+    color: #fbfbffc1;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
+}
+
+.project-detail h3 {
+    color: #fbfbffc1;
+}
+
+.project-detail p {
+    font-size: 0.8rem;
+    font-weight: lighter;
+    color: #fbfbffc1;
 }
