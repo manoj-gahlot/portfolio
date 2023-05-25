@@ -353,7 +353,7 @@ ul {
 .flex-project {
     flex-direction: row;
     flex-wrap: wrap;
-    height: 200px;
+    /* height: 300px; */
 }
 
 .flex-project>.project-img {
@@ -375,7 +375,8 @@ ul {
 
 img {
     width: 100%;
-    height: 50%;
+    height: 100%;
+    object-fit: contain;
 
 }
 
