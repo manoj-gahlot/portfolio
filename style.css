@@ -63,6 +63,10 @@ body {
 header {
     flex-direction: column;
     gap: 1.5rem;
+    order: 0;
+    /* display: inline-block;
+    height: fit-content; */
+
     /* position: absolute; */
     /* left: 0; */
     /* top: 0; */
@@ -78,8 +82,26 @@ header {
 
 #main {
     /* height: fit-content; */
+    box-sizing: border-box;
     gap: 1rem;
+    display: block;
+    order: 1;
 }
+
+/* 
+@media (max-height:550px) and (max-width:1000px) {
+    #main {
+        position: relative;
+        top: 20vh;
+    }
+}
+
+@media (max-height:400px) and (max-width:1000px) {
+    #main {
+        position: relative;
+        top: 20vh;
+    }
+} */
 
 .flex-header-title {
     box-sizing: border-box;
@@ -354,6 +376,8 @@ ul {
     flex-direction: row;
     flex-wrap: wrap;
     /* height: 300px; */
+    box-shadow: 0px 0px 2px 1px #313160;
+    border-radius: 15px;
 }
 
 .flex-project>.project-img {
