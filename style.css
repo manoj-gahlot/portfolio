@@ -31,7 +31,8 @@ a {
 }
 
 body {
-    background-color: #0f172a;
+    background-color: #020c24ea;
+    /* opacity: 0.9; */
     /* position: fixed; */
     /* width: 80%; */
     display: block;
@@ -39,7 +40,14 @@ body {
     /* margin: auto; */
 }
 
+/* 
+body:hover {
+    backdrop-filter: blur(10px);
+} */
+
 .flex-body-container {
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
     flex-wrap: wrap;
     gap: 10px;
     /* height: 80vh; */
@@ -213,6 +221,7 @@ ul {
 
 #instagram svg:hover {
     fill: #ec0982;
+    fill: url(#MyGradient);
     /* fill: red; */
     /* stroke: green;
     stroke-width: 20; */
@@ -261,7 +270,16 @@ ul {
     /* -webkit-text-stroke-width: 1pt; */
     opacity: 0.4;
     font-weight: 400;
-    color: rgb(36, 196, 241);
+    /* background-color: #00002ce9; */
+    color: #e01879ef;
+    /* background-clip: text; */
+    /* -webkit-background-clip: text; */
+    /* box-shadow: 0px 0px 3px #000032e4; */
+    -webkit-backdrop-filter: blue(20px);
+    /* opacity: 0.2; */
+    /* opacity: .4; */
+    /* color: transparent; */
+    /* backdrop-filter: blur(10px); */
     /* -webkit-background-clip: border-box; */
     /* background-clip: text; */
     /* -webkit-backface-clip: text; */
@@ -275,7 +293,7 @@ ul {
 
 .about-content span:hover {
     opacity: 1;
-    color: #0d8ff3c4;
+    color: #f30d61ef;
 }
 
 #cv {
